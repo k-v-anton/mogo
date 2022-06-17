@@ -1,0 +1,156 @@
+.header {
+    background: url(../img/header/fon.jpg);
+
+    .container {
+        max-width: 1200px;
+        padding: 15px;
+        margin: 0 auto;
+
+        .header__top {
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+                img {}
+            }
+
+            .navigation-panel {
+
+                min-width: 50%;
+                display: flex;
+                align-items: center;
+
+                ul {
+                    width: 80%;
+                    display: flex;
+
+                    li {
+                        width: 20%;
+
+                        &:hover {
+                            border-bottom: 1px solid #F4BF87;
+                        }
+
+                        a {
+                            display: inline-block;
+                            width: 100%;
+                            font-family: 'Raleway';
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            color: #FFFFFF;
+
+                            &:hover {
+                                color: #F4BF87;
+                            }
+                        }
+                    }
+
+                }
+
+                .header-top__icons {
+                    display: flex;
+                    width: 20%;
+
+                    img {
+                        padding: 0 17px;
+
+
+                    }
+                }
+            }
+        }
+
+        .header__main {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            :nth-child(1) {
+                font-family: 'Kaushan Script';
+                font-size: 64px;
+                line-height: 93px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+
+            :nth-child(2) {
+                position: relative;
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 144px;
+                line-height: 176px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                padding: 20px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 170px;
+                    height: 3px;
+                    bottom: 0;
+                    left: 50%;
+                    background: #ffffff;
+                    margin: 0 0 0 -85px;
+
+                }
+            }
+
+            :nth-child(3) {
+
+                border: 1px solid #ffffff;
+                max-width: 370px;
+                width: 33%;
+                margin: 75px 0px;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 80px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FFFFFF;
+
+
+            }
+
+        }
+
+        .header__footer {
+            margin: 41px 0px 0px 0px;
+            display: flex;
+            justify-content: space-around;
+
+            .header__box-content {
+                width: 22%;
+                border-top: 3px solid #ffffff;
+                padding: 21px 0;
+
+                p {
+                    font-family: 'Raleway';
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    color: #F9EFCF;
+                    position: relative;
+
+                    span {
+                        font-family: 'Raleway';
+                        font-weight: 700;
+                        font-size: 36px;
+                        line-height: 43px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+
+                }
+            }
+        }
+    }
+}
