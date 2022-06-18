@@ -1,0 +1,47 @@
+.services {
+    .container {
+        margin: 0 auto;
+        padding: 15px;
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .services__element {
+            width: 32%;
+            display: flex;
+            align-items: flex-start;
+            .element__icon {
+                max-width: 70px;
+                width: 25%;
+                padding: 10px 10px 10px 0px;
+                img {
+                    width: 100%;
+                }
+            }
+            .element__main {
+                
+                h3 {
+                    padding: 15px 0px 30px 0px;
+                    font-family: 'Raleway';
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    color: #2D3033;
+                }
+
+                p {
+                    font-family: 'Raleway';
+                    font-weight: 400; 
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #2D3033;
+                    margin: 0 0 70px 0;
+                }
+            }
+        }
+    }
+}
+
+
