@@ -1,0 +1,19 @@
+.our-work {
+    .container {
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .our__workbox-element {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+

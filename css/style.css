@@ -88,6 +88,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
 }
+.header .container .header__top .logo img {
+  max-width: 270px;
+}
 .header .container .header__top .navigation-panel {
   min-width: 50%;
   display: flex;
@@ -200,6 +203,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
 }
 
+.devices .conteiner,
 .titles-sections .conteiner {
   margin: 0 auto;
   max-width: 1200px;
@@ -209,6 +213,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
 }
+.devices .conteiner h3,
 .titles-sections .conteiner h3 {
   font-family: "Kaushan Script";
   font-size: 30px;
@@ -216,6 +221,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #2D3033;
   padding: 18px 0px;
 }
+.devices .conteiner h2,
 .titles-sections .conteiner h2 {
   font-family: "Raleway";
   font-weight: 900;
@@ -226,6 +232,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 18px 0 45px 0;
   text-transform: uppercase;
 }
+.devices .conteiner h2::after,
 .titles-sections .conteiner h2::after {
   content: "";
   position: absolute;
@@ -236,6 +243,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgb(243, 130, 129);
   margin: 0 0 0 -85px;
 }
+.devices .conteiner p,
 .titles-sections .conteiner p {
   padding: 38px 0;
   font-family: "Raleway";
@@ -336,6 +344,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 70px 0;
 }
 
+.devices {
+  background: url(../img/devises/bg2.svg) 0 0/100% auto no-repeat;
+}
+
 .main-service .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -421,4 +433,130 @@ h1, h2, h3, h4, h5, h6 {
 .main-service .container .service__container .service__content .test__content::-webkit-scrollbar-thumb {
   background: #95E1D3;
   border-radius: 2px;
+}
+
+.team__content .container {
+  max-width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.team__content .container .content__person {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.team__content .container .content__person .person__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+}
+.team__content .container .content__person .person__item .item__photo {
+  width: 100%;
+  max-width: 371px;
+}
+.team__content .container .content__person .person__item .item__name {
+  padding: 26px 0;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.team__content .container .content__person .person__item .item__job {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.team__content .container .content__partners {
+  padding: 180px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team__content .container .content__partners .partners__logo {
+  max-width: 72px;
+}
+
+.our-work .container {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our-work .container .our__workbox-element {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.our-work .container .our__workbox-element img {
+  width: 100%;
+}
+
+.people-say .container {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.people-say .container .people-say__element {
+  padding: 25px 0;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+}
+.people-say .container .people-say__element .element__photo {
+  width: 25%;
+}
+.people-say .container .people-say__element .element__photo img {
+  width: 100%;
+  max-width: 130px;
+}
+.people-say .container .people-say__element .element__info {
+  width: 75%;
+  padding: 0px 15px 0px 25px;
+}
+.people-say .container .people-say__element .element__info .info__name {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.people-say .container .people-say__element .element__info .info__job {
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #2D3033;
+  position: relative;
+  padding: 0 0 15px 0;
+}
+.people-say .container .people-say__element .element__info .info__job::after {
+  content: "";
+  width: 70px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgb(243, 130, 129);
+}
+.people-say .container .people-say__element .element__info .info__short-description {
+  margin: 32px 0px;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 21px;
+  color: #2D3033;
 }

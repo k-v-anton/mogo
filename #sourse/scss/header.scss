@@ -12,13 +12,15 @@
             justify-content: space-between;
 
             .logo {
-                img {}
+                img {
+                    max-width: 270px;
+                }
             }
 
             .navigation-panel {
 
                 min-width: 50%;
-                display: flex;
+                display: flex;  
                 align-items: center;
 
                 ul {

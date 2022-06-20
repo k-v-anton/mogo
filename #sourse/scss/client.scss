@@ -1,0 +1,66 @@
+.people-say {
+    .container {
+        padding: 15px;
+        margin: 0 auto;
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        .people-say__element {
+            padding: 25px 0;
+            width: 50%;
+            display: flex;
+            align-items: flex-start;
+            .element__photo {
+                width: 25%;
+                
+                img {
+                    width: 100%;
+                    max-width: 130px;
+
+                }
+            }
+            .element__info {
+                width: 75%;
+                padding: 0px 15px 0px 25px;
+                .info__name {
+                    font-family: 'Raleway';
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    color: #2D3033;
+                }
+                .info__job {
+                    font-family: 'Raleway';
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    color: #2D3033;
+                    position: relative;
+                    padding: 0 0 15px 0;
+                    &::after {
+                        content: '';
+                        width: 70px;
+                        height: 1px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        background: rgba(243, 130, 129, 1)
+                        ;
+                    }
+                }
+                .info__short-description {
+                    margin: 32px 0px;
+                    font-family: 'Raleway';
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #2D3033;
+                }
+            }
+
+        }
+    }
+}
+
+
+
