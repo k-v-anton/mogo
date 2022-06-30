@@ -1,0 +1,89 @@
+.works {
+    display: flex;
+    align-items: stretch;
+
+    .works__section {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        width: 25%;
+        
+
+        .item {
+            
+            width: 100%;
+            height: calc(150px + 226 * (100vw / 1200));
+            position: relative;
+
+            
+            
+            .item__grad {
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                color: #FFFFFF;
+                transition: all .5s linear;
+
+                &:hover {
+                    opacity: 1;
+                    transition: all .5s linear;
+                }
+                .works__icon {
+                }
+                .works__title {
+                    font-family: 'Raleway';
+                    font-weight: 700;
+                    font-size: calc(18px + 6 * (100vw / 1200));
+                    text-transform: uppercase;
+
+                    
+                }
+                .works__text {
+                    font-family: 'Raleway';
+                    font-size: calc(14px + 4 * (100vw / 1200));
+                }
+            }
+        }
+    }
+}
+
+#item-works-one {
+    background: url(../img/our-work/1.jpg) center / 100% 100% no-repeat;
+}
+#item-works-two {
+    background: url(../img/our-work/2.jpg) center / 100% 100% no-repeat;
+}
+#item-works-three {
+    background: url(../img/our-work/3.jpg) center / 100% 100% no-repeat;
+}
+#item-works-four {
+    background: url(../img/our-work/4.jpg) center / 100% 100% no-repeat;
+}
+#item-works-five {
+    background: url(../img/our-work/5.jpg) center / 100% 100% no-repeat;
+    height: calc(300px + 452 * (100vw / 1200));
+}
+#item-works-six {
+    background: url(../img/our-work/6.jpg) center / 100% 100% no-repeat;
+}
+#item-works-seven {
+    background: url(../img/our-work/7.jpg) center / 100% 100% no-repeat;
+}
+
+
+
+
+
+
+
+
+
+

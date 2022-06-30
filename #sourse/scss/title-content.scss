@@ -1,0 +1,45 @@
+.title-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    .title-content__pre-title {
+        font-family: 'Kaushan Script';
+        font-size: calc(24px + 6 * (100vw / 1200));
+        line-height: calc(44px + 9 * (100vw / 1200));
+        text-align: center;
+        color: #2D3033;
+        margin: 0 0 calc(36px + 2 * (100vw / 1200)) 0;
+    }
+    .title-content__main-title {
+        font-family: 'Raleway';
+        font-weight: 900;
+        font-size: calc(24px + 12 * (100vw / 1200));
+        line-height: calc(28px + 14 * (100vw / 1200));
+        text-align: center;
+        text-transform: uppercase;
+        color: #2D3033;
+        position: relative;
+        padding: 0 0 calc(40px + 5 * (100vw / 1200)) 0;
+        margin: 0 0 calc(36px + 2 * (100vw / 1200)) 0;
+        &::after {
+            content: '';
+            position: absolute;
+            width: calc(134px + 36 * (100vw / 1200));
+            height: calc(2px + 1 * (100vw / 1200));
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background: #f38281;
+            
+        }
+    }
+    .text {
+        font-family: 'Raleway';
+        font-size: calc(14px + 4 * (100vw / 1200));
+        line-height: calc(16px + 5 * (100vw / 1200));
+        text-align: center;
+        color: #000000;
+    }
+}
+

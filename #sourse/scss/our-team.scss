@@ -1,0 +1,214 @@
+.our-team {
+
+    .container{
+        margin: 0 auto;
+        padding: calc(15px + 5 * (100vw / 1200));
+        max-width: 1200px;
+
+        .our-content__main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 25px 0 0 0 ;
+
+            .item {
+                width: 32%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: all 3s ease;
+                
+
+                .item__image-one {
+                    width: 100%;
+                    min-height: calc(240px + 150 * (100vw / 1200));
+                    background: url(../img/our-team/1.jpg) center/100% 100% no-repeat;
+
+                    .social {
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            transform: translate(-10px, -10px);
+                            opacity: 1;
+                            transition: all 0.5s ease;
+                            
+                        }
+                    }
+                }
+
+                .item__image-two {
+                    width: 100%;
+                    min-height: calc(240px + 150 * (100vw / 1200));
+                    background: url(../img/our-team/2.jpg) center/100% 100% no-repeat;
+
+                    .social {
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            transform: translate(-10px, -10px);
+                            opacity: 1;
+                            transition: all 0.5s ease;
+                            
+                        }
+                    }
+                }
+
+                .item__image-three {
+                    width: 100%;
+                    min-height: calc(240px + 150 * (100vw / 1200));
+                    background: url(../img/our-team/3.jpg) center/100% 100% no-repeat;
+
+                    .social {
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            transform: translate(-10px, -10px);
+                            opacity: 1;
+                            transition: all 0.5s ease;
+                            
+                        }
+                    }
+                }
+
+
+                .item__name {
+                    font-family: 'Raleway';
+                    font-weight: 700;
+                    font-size: calc(18px + 6 * (100vw / 1200));
+                    text-transform: uppercase;
+                    color: #2D3033;
+                    margin: calc(20px + 7 * (100vw / 1200)) 0;
+                }
+
+                .item__prof {
+                    font-family: 'Raleway';
+                    font-size: calc(14px + 4 * (100vw / 1200));
+                    text-transform: uppercase;
+                    color: #2D3033;
+                }
+            }
+        }
+        
+    }
+}
+
+@media (min-width: 1921px) {
+    .our-team {
+
+        .container{
+            max-width: 62.5%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .our-team {
+
+        .container{
+    
+            .our-content__main-content {
+                
+    
+                .item {
+                    width: 100%;                    
+    
+                    .item__image-one {
+                        background: url(../img/our-team/1.jpg) center/100% auto no-repeat;
+                        position: relative;
+                        
+                        .social {
+                            width: auto;
+                            height: auto;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+    
+                            svg {
+                                display: block;
+                            }
+                            
+                            &:hover {
+                                background: none;
+                                transform: none;
+                            }
+                        }
+                    }
+    
+                    .item__image-two {
+                        background: url(../img/our-team/2.jpg) center/100% auto no-repeat;
+                        position: relative;
+    
+                        .social {
+                            width: auto;
+                            height: auto;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+    
+                            svg {
+                                display: block;
+                            }
+                            
+                            &:hover {
+                                background: none;
+                                transform: none;
+                            }
+                        }
+                    }
+    
+                    .item__image-three {
+                        background: url(../img/our-team/3.jpg) center/100% auto no-repeat;
+                        position: relative;
+    
+                        .social {
+                            width: auto;
+                            height: auto;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+    
+                            svg {
+                                display: block;
+                            }
+
+                            &:hover {
+                                background: none;
+                                transform: none;
+                            }
+                        }
+                    }
+    
+                    .item__prof {
+                        margin: 0 0 25px 0;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+

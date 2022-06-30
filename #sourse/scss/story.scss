@@ -1,0 +1,149 @@
+
+
+
+.story {
+
+    .container{
+        margin: 0 auto;
+        padding: calc(15px + 5 * (100vw / 1200));
+        max-width: 1200px;
+
+        .story__about {
+            display: flex;
+            justify-content: space-between;
+
+            .about__item {
+                width: 30%;
+                background-color: #95e1d3;
+                position: relative;
+
+                .about__image {
+                    background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+                    transition: all 0.3s ease;
+
+                    img {
+                    width: 100%;
+                    display: block;
+                    transition: all 0.3s linear;
+                    }
+                }
+                &:hover{
+                    .about__image{
+                        transform: translate3d( calc(-5px - 5 * (100vw / 1200)), calc(-5px - 5 * (100vh / 1200)), 0);
+                        
+                        img{
+                            width: 100%;
+                            opacity: .1;
+                        }
+                    }
+                    .about__text{
+                        opacity: 1;
+                        transition: all 0.3s ease;
+                    }
+                }
+                .about__text {
+                    width: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translate3d(-5px, -50%, 0);
+                    opacity: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    svg {
+                        width: calc(30px + 10 * (100vw / 1200));
+                        height: calc(30px + 10 * (100vw / 1200));
+                    }
+
+                    p {
+                        padding: calc(10px + 5 * (100vw / 1200));
+                        font-family: 'Raleway';
+                        font-weight: 500;
+                        font-size: calc(14px + 6 * (100vw / 1200));
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media (min-width: 1921px) {
+    .story {
+
+        .container{
+            max-width: 62.5%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .story {
+
+        .container{
+    
+            .story__about {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+    
+                .about__item {
+                    width: 100%;
+                    margin: 0 0 25px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+    
+                    .about__image {
+                        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+                        transition: all 0.3s ease;
+    
+                        img {
+                        width: 100%;
+                        display: block;
+                        transition: all 0.3s linear;
+                        }
+                    }
+
+                    &:hover{
+                        .about__image{
+                            transform: none;
+                            
+                            img{
+                                width: 100%;
+                                opacity: 1;
+                            }
+                        }
+                        .about__text{
+                            opacity: none;
+                            transition: none;
+                        }
+                    }
+                    
+                    .about__text {
+                        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+                        width: 100%;
+                        height: 30%;
+                        position: absolute;
+                        top: 70%;
+                        left: 0;
+                        transform: none;
+                        opacity: 1;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        flex-direction: row;
+                        padding: 15px;
+                    } 
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,222 @@
+.main-title {
+    height: 100%;
+    background: url(../img/main/fon.jpg) center/auto 100% no-repeat;
+
+    .main-title__substrate {
+        height: 100%;
+        background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+    
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 15px 15px 15px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            .substrate__big-slider {
+                height: 80%;
+
+                .big-slider__slide {
+                    padding: 0 15px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+                    .pre-title {
+                        font-family: 'Kaushan Script';
+                        font-size: 36px;
+                        line-height: 52px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                    .title {
+                        font-family: 'Montserrat';
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 59px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        position: relative;
+                        padding: 0 0 30px 0;
+                        margin: 0 0 10px 0;
+                        
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 134px;
+                            bottom: 0;
+                            height: 4px;
+                            left: 50%;
+                            background:#ffffff;
+                            transform: translate(-50%, 0);
+                        }
+                    }
+                    .slide__button {
+                        
+                        display: inline-block;
+                        width: 100%;
+                        background: rgba(0, 0, 0, 0);
+                        border: 4px solid #fff;
+                        color: #fff;
+                        height: calc(54px + 26 * (100vw/1200));
+                        margin: 0 0 50px 0;
+                        font-family: 'Raleway';
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 21px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        &:hover {
+                            background: #fff;
+                            color: rgba(228, 190, 141, 1);
+                        }
+                        &:active {
+                            background: #fff;
+                            color: rgba(228, 190, 141, 1);
+                            border: 4px solid rgba(228, 190, 141, 1);
+                        }
+                    }
+                }
+
+            }
+            .slick-list {
+                overflow: hidden;
+                height: 100%;
+            }
+            
+            .slick-track{
+                height: 100%;
+                display: flex;
+            }
+            
+            .slick-dots{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%
+            }
+            .slick-dots li{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            /* Активная точка */
+            .slick-dots li.slick-active button{
+                background: rgba(243, 130, 129, 1);
+            }
+            /* Элемент точки */
+            .slick-dots li button{
+                font-size: 0;
+                display: inline-block;
+                background: #fff;
+                width: 95%;
+                padding: 0 10%;
+                height: 4px;
+                position: relative;
+                top: 0;
+            }
+            
+            .substrate__litle-slider {
+                display: none;
+            }
+        }
+    }    
+}
+
+@media (min-width: 768px) {
+    .main-title {
+        background: url(../img/main/fon.jpg) 0 0/100% 100% no-repeat;
+    
+        .main-title__substrate {
+
+            .container {
+    
+                .substrate__big-slider {
+    
+                    .big-slider__slide {
+                        align-items: center;
+                        .pre-title {
+                            font-size: calc(36px + 30 * (100vw / 1200));
+                            line-height: calc(52px + 30 * (100vw / 1200));
+                        }
+                        .title {
+                            font-size: calc(48px + 45 * (100vw / 1200));
+                            line-height: calc(59px + 45 * (100vw / 1200));
+                            padding: 0 0 calc(70px + 10 * (100vw / 1200)) 0;
+                            
+                            &::after {
+                                width: calc(134px + 100 * (100vw / 1200));
+                                height: calc(4px + 2 * (100vw / 3000));
+                            }
+                        }
+
+                        .slide__button {
+                            border: calc(4px + 2 * (100vw / 3000)) solid #ffffff;
+                            width: 33%;
+                            font-size: calc(18px + 7 * (100vw / 1200));
+                            line-height: calc(21px + 7 * (100vw / 1200));
+                            margin: 0 0 calc(50px + 40 * (100vw / 1200)) 0;
+                        }
+                    }
+                }
+
+                .slick-dots li.slick-active button{
+                    background: linear-gradient(to right, rgba(243, 130, 129, 1) 25%, #ffffff 25%);
+                    
+                    
+                }
+                .slick-dots li button{
+                    height: calc(4px + 2 * (100vw / 3000));
+                }
+                .substrate__litle-slider {
+                    height: 10%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .text {
+                        width: 25%;
+                        display: flex;
+                        justify-content: start;
+                        align-items: center;
+                        font-family: 'Raleway';
+                        font-weight: 500;
+                        font-size: calc(14px + 7 * (100vw / 1200));
+                        line-height: calc(16px + 7 * (100vw / 1200));
+                        text-transform: uppercase;
+                        color: #F9EFCF;
+                    }
+                    .text__number {
+                        font-family: 'Raleway';
+                        font-weight: 700;
+                        font-size: calc(24px + 12 * (100vw / 1200));
+                        line-height: calc(26px + 12* (100vw / 1200));
+                        text-transform: uppercase;
+                        color: #F9EFCF;
+                    }
+                }
+            }
+        }    
+    }  
+}
+
+@media (min-width: 1921px) {
+    .main-title {
+
+        .main-title__substrate {
+
+            .container {
+
+                max-width: 62.5%;
+            }
+        }     
+    }
+}
+    
+    
+
+
+
+

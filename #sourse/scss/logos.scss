@@ -1,0 +1,52 @@
+.logos {
+    background: #F8F8F8;
+    .container {
+        margin: 0 auto;
+        padding: calc(40px + 50 * (100vw / 1200)) calc(15px + 1 * (100vw / 1200));
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-around;
+        .logos__item {
+            svg {
+                width: calc(45px + 27 * (100vw / 1200));
+                height: calc(45px + 27 * (100vw / 1200));
+            }
+        }
+    }
+}
+
+@media (min-width: 1921px) {
+    .our-team {
+
+        .container{
+            max-width: 62.5%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .logos {
+        margin: 15px 0;
+        background: #F8F8F8;
+        .container {
+            flex-wrap: wrap;
+            width: 100%;
+            
+            .logos__item {
+                width: 50%;
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:not(:last-child) {
+                    margin: 0 0 30px 0;
+                }
+
+                &:nth-child(3) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

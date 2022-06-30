@@ -1,0 +1,13 @@
+.logos .container {
+  margin: 0 auto;
+  padding: calc(15px + 0.0833333333vw);
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (min-width: 1921px) {
+  .our-team .container {
+    max-width: 62.5%;
+  }
+}
