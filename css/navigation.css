@@ -7,55 +7,33 @@
   height: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .navigation .container .header__top-box {
   padding: 20px 15px;
   width: 100%;
   height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 .navigation .container .header__top-box .logo {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .navigation .container .header__top-box .nav-title {
   height: 100%;
   height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .navigation .container .header__top-box .nav-title .burger {
   padding: 3px 0 3px 0;
   position: relative;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.3s ease;
+  align-items: center;
   transition: all 0.3s ease;
 }
 .navigation .container .header__top-box .nav-title .burger .burger__center-line {
@@ -71,7 +49,6 @@
   background: #fff;
   position: absolute;
   top: 0;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .navigation .container .header__top-box .nav-title .burger ::after {
@@ -81,11 +58,9 @@
   background: #fff;
   position: absolute;
   bottom: 0;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .navigation .container .header__top-box .nav-title .x-burger {
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .navigation .container .header__top-box .nav-title .x-burger .burger__center-line {
@@ -97,10 +72,8 @@
   height: 3px;
   background: rgb(255, 255, 255);
   position: absolute;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 13px;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .navigation .container .header__top-box .nav-title .x-burger ::after {
@@ -110,36 +83,22 @@
   bottom: 14px;
   background: rgb(255, 255, 255);
   position: absolute;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  -webkit-transition: all 0.5s ease;
+  transform: rotate(-45deg);
   transition: all 0.5s ease;
 }
 .navigation .container .nav-menu {
   display: none;
   height: 100%;
   width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  flex-direction: column;
+  justify-content: start;
 }
 .navigation .container .nav-menu .nav-menu__box-shadow {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 100vh;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  flex-direction: column;
+  justify-content: start;
 }
 .navigation .container .nav-menu .nav-menu__box-shadow .nav-menu__link {
   width: 100%;
@@ -154,8 +113,7 @@
 }
 
 .scrolled {
-  background: rgb(37, 43, 73);
-  -webkit-transition: all 0.5s ease;
+  background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
   transition: all 0.5s ease;
 }
 
@@ -170,66 +128,39 @@
     height: auto;
     max-width: 1200px;
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .navigation .container .header__top-box {
     padding: 20px 15px;
     width: 30%;
     height: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .navigation .container .header__top-box .logo {
     height: 100%;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .navigation .container .header__top-box .nav-title {
     display: none;
   }
   .navigation .container .nav-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 0;
     width: 70%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    flex-direction: row;
+    justify-content: start;
     background: none;
   }
   .navigation .container .nav-menu .nav-menu__box-shadow {
     width: 100%;
     height: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    flex-direction: row;
+    justify-content: start;
     background: none;
   }
   .navigation .container .nav-menu .nav-menu__box-shadow .nav-menu__link {
@@ -242,7 +173,6 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
   .navigation .container .nav-menu .nav-menu__box-shadow .nav-menu__link:hover {

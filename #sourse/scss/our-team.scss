@@ -1,9 +1,10 @@
 .our-team {
-
+  
     .container{
         margin: 0 auto;
         padding: calc(15px + 5 * (100vw / 1200));
         max-width: 1200px;
+        
 
         .our-content__main-content {
             display: flex;
@@ -211,4 +212,3 @@
         }
     }
 }
-

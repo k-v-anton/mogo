@@ -1,4 +1,4 @@
-.review {
+.review-one {
     background-color: #f8f8f8;
 
     .container {
@@ -130,7 +130,7 @@
 }
 
 @media (max-width: 767px) {
-    .review {
+    .review-one {
     
         .container {
             padding: 25px calc(15px + 1 * (100vw / 1200));

@@ -1,0 +1,147 @@
+.our-story {
+
+    .container {
+        margin: 0 auto;
+        padding: calc(15px + 1 * (100vw / 1200));
+        max-width: 1200px;
+
+        .our-story__box {
+            display: flex;
+            justify-content: space-between;
+
+            .our-story__item {
+                max-width: 32%;
+                margin: calc(20px + 5 * (100vw / 1200)) 0;
+                .item__image {
+                    position: relative;
+                    margin: 0 0 calc(33px + 7 * (100vw / 1200)) 0;
+
+                    .image__photo {
+                        width: 100%;
+                        height: auto;
+                    }
+                    .image__ghost {
+                        position: absolute;
+                        left: -2%;
+                        top: 60%;
+                        width: 20%;
+                        height: 30%;
+                        background: #95E1D3;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        color: #FFFFFF;
+                        font-family: 'Raleway';
+
+                        .ghost__date {
+                            font-weight: 700;
+                            font-size: calc(24px + 10 * (100vw / 1200));
+                            line-height: calc(30px + 10 * (100vw / 1200));
+                            text-transform: uppercase;
+                        }
+                        .ghost__month {
+                            font-weight: 500;
+                            font-size: calc(14px + 4 * (100vw / 1200));
+                            line-height: calc(20px + 10 * (100vw / 1200));
+                        }
+                    }
+                }
+                .item__title {
+                    display: inline-block;
+                    width: 100%;
+                    font-family: 'Raleway';
+                    font-weight: 700;
+                    font-size: calc(13px + 5 * (100vw / 1200));
+                    line-height: calc(14px + 6 * (100vw / 1200));
+                    text-transform: uppercase;
+                    color: #2D3033;
+                    margin: 0 0 20px 0;
+                }
+                .item__text {
+                    font-family: 'Raleway';
+                    font-size: calc(10px + 3 * (100vw / 1200));
+                    line-height: calc(12px + 4 * (100vw / 1200));
+                    color: #2D3033;
+                    margin: 0 0 calc(33px + 7 * (100vw / 1200)) 0;
+                }
+                .item__views {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center; 
+                    width: 50%;                   
+                    .item__view {
+                        display: flex;
+                        align-items: center;
+                        svg {
+                            width: calc(25px + 5 * (100vw / 1200));
+                            height: calc(17px + 4 * (100vw / 1200));
+                        }
+                        .views__col {
+                            font-family: 'Raleway';
+                            font-size: calc(13px + 2 * (100vw / 1200));
+                            line-height: calc(14px + 3 * (100vw / 1200));
+                            color: #2D3033;
+                        }
+                    }
+                    .item__coments {
+                        display: flex;
+                        align-items: center;
+                        svg {
+                            width: calc(25px + 5 * (100vw / 1200));
+                            height: calc(25px + 5 * (100vw / 1200));
+                        }
+                        .item__coment {
+                            font-family: 'Raleway';
+                            font-size: calc(13px + 2 * (100vw / 1200));
+                            line-height: calc(14px + 3 * (100vw / 1200));
+                            color: #2D3033;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1921px) {
+    .our-story {
+
+        .container{
+            max-width: 62.5%;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .our-story {
+
+        .container {
+    
+            .our-story__box {
+                flex-direction: column;
+
+                .our-story__item {
+                    max-width: 100%;
+                    
+                    .item__image {
+                        
+                        .image__ghost {
+                            left: 0%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

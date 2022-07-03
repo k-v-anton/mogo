@@ -1,0 +1,68 @@
+.map {
+    margin: calc(20px + 10 * (100vw / 1200)) 0 0 0;
+    background: url(../img/map/unsplash_x3REnO9z7io.jpg) 0 0/100% 100% no-repeat;
+
+    .map__box-ghost {
+        background: rgba(255, 255, 255, 0.9);
+        padding: calc(20px + 10 * (100vw / 1200)) 0;
+
+        .conteiner {
+            margin:  0 auto;
+            padding: calc(15px + 1 * (100vw / 1200));
+
+            .map-header {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                cursor: pointer;
+
+                .map-header__icon {
+                    margin: 0 0 calc(30px + 5 * (100vw / 1200)) 0;
+                    width: calc(35px + 7 * (100vw / 1200));
+                    fill: #F38281;
+                }
+
+                .map-header__title {
+                    font-family: 'Raleway';
+                    font-weight: 900;
+                    font-size: 36px;
+                    text-transform: uppercase;
+                    color: #F38281;
+                    position: relative;
+                    padding: 0 0 calc(30px + 10 * (100vw / 1200)) 0;
+                    margin: 0 0 calc(40px + 10 * (100vw / 1200)) 0;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        background: #F38281;
+                        transform: translate(-50%, 0);
+                        width: calc(120px + 50 * (100vw / 1200));
+                        height: calc(2px + 1 * (100vw / 1200));
+                    }
+                }
+            }
+            .map-box {
+                display: none;
+                margin: 0 5%;
+                border: calc(2px + 1 * (100vw / 1200)) solid #F38281;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1921px) {
+    .map {
+
+        .container{
+            max-width: 62.5%;
+        }
+    }
+}
+
+
+
+
