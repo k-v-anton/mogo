@@ -70,22 +70,22 @@ $(document).ready(function () {
 
 
 
-// // ----------------ПЛАВНЫЙ СКРОЛЛ К ЯКАРЮ -------------------//
-// $("a.nav-menu__link").on("click", function (e) {
-//     e.preventDefault();
-//     var anchor = $(this).attr('href');
-//     $('html, body').stop().animate({
-//         scrollTop: $(anchor).offset().top - 60
-//     }, 800);
-// });
+// ----------------ПЛАВНЫЙ СКРОЛЛ К ЯКАРЮ -------------------//
+$("a.nav-menu__link").on("click", function (e) {
+    e.preventDefault();
+    var anchor = $(this).attr('href');
+    $('html, body').stop().animate({
+        scrollTop: $(anchor).offset().top - 60
+    }, 800);
+});
 
-// $("a.logo").on("click", function (e) {
-//     e.preventDefault();
-//     var anchor = $(this).attr('href');
-//     $('html, body').stop().animate({
-//         scrollTop: $(anchor).offset().top - 60
-//     }, 800);
-// });
+$("a.logo").on("click", function (e) {
+    e.preventDefault();
+    var anchor = $(this).attr('href');
+    $('html, body').stop().animate({
+        scrollTop: $(anchor).offset().top - 60
+    }, 800);
+});
 
 // // --------------------СЛИК СЛАЙД----------------------- //
 // $(document).ready(function () {

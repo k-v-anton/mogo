@@ -18,6 +18,11 @@
                 height: 100%;
                 display: flex;
                 align-items: center;
+                .navigatiom__main-logo {
+                    width: calc(55px + 20 * (100vw / 1200));
+                    height: calc(15px + 20 * (100vw / 1200));
+                    fill: #ffffff;
+                }
             }
             .nav-title {
                 height: 100%;
@@ -121,23 +126,19 @@
     transition: all 0.5s ease;
 }
 
-@media (min-width:769px) {
+@media (min-width:768px) {
     .navigation {
-        width: 100%;
         height: 100px;
-        position: fixed;
-        z-index: 50;
+
         .container {
-            height: auto;
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
             flex-direction: row;
+
             .header__top-box {
-                padding: 20px 15px;
+                padding: 0 15px 20px 15px;
                 width: 30%;
-                height: 60px;
+                height: 100px;
                 display: flex;
+                align-items: center;
                 justify-content: space-between;
                 .logo {
                     height: 100%;

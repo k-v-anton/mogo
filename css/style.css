@@ -100,6 +100,11 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
 }
+.navigation .container .header__top-box .logo .navigatiom__main-logo {
+  width: calc(55px + 1.6666666667vw);
+  height: calc(15px + 1.6666666667vw);
+  fill: #ffffff;
+}
 .navigation .container .header__top-box .nav-title {
   height: 100%;
   height: 20px;
@@ -195,25 +200,19 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s ease;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .navigation {
-    width: 100%;
     height: 100px;
-    position: fixed;
-    z-index: 50;
   }
   .navigation .container {
-    height: auto;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
     flex-direction: row;
   }
   .navigation .container .header__top-box {
-    padding: 20px 15px;
+    padding: 0 15px 20px 15px;
     width: 30%;
-    height: 60px;
+    height: 100px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
   .navigation .container .header__top-box .logo {
@@ -271,6 +270,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main-title {
   height: 100%;
+  min-height: 650px;
   background: url(../img/main/fon.jpg) center/auto 100% no-repeat;
 }
 .main-title .main-title__substrate {
@@ -876,7 +876,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: calc(13px + 0.4166666667vw);
   overflow: hidden;
   position: relative;
-  background: url(../../img/optional-devices/fon-phone.jpg) center/100% 100% no-repeat;
+  background: url(../img/optional-devices/fon-phone.jpg) center/100% 100% no-repeat;
 }
 .optional-devices .optional-devices__ghost .container .optional-devices__border-phome .optional-devices__phone-fon .optional-devices__phone-camera {
   position: absolute;
@@ -1395,7 +1395,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 3s ease;
 }
 .our-team .container .our-content__main-content .item .item__image-one {
   width: 100%;
@@ -1687,10 +1686,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-column-end: 2;
   }
   .our-work .our-work__projects .item__6 {
-    grid-row-start: 5;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1/span 2;
   }
   .our-work .our-work__projects .item__7 {
     grid-row-start: 3;

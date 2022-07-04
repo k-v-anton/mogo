@@ -74,6 +74,7 @@
 
 @media (max-width: 767px) {
     .our-work {
+        
 
         .our-work__projects {
             grid-template: repeat(5, calc(150px + 200 * (100vw / 1200))) / repeat(2, 1fr);
@@ -112,12 +113,9 @@
                 grid-column-start: 1;
                 grid-column-end: 2;
             }
-//  НЕ РАССТЯГИВАЕТСЯ НА ДВЕ КОЛОНКИ ПРИ АДАПТИВЕ НА МОБ
+            
             .item__6 {
-                grid-row-start: 5;
-                grid-row-end: 6;
-                grid-column-start: 1;
-                grid-column-end: 3;
+                grid-column: 1 / span 2;
             }
 
             .item__7 {
